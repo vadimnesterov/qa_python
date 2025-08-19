@@ -27,7 +27,8 @@
 ## Позитивные тесты
 - `test_add_new_book_valid_names` — добавление книг с корректными названиями  
 - `test_set_book_genre_valid` — присвоение допустимого жанра ранее добавленной книге  
-- `test_get_book_genre_returns_correct_genre` — получение жанра книги по названию  
+- `test_get_book_genre_returns_correct_genre` — получение жанра книги по названию
+- `test_get_books_genre_returns_correct_dict`  — получение корректного словаря после добавления книги 
 - `test_get_books_with_specific_genre_returns_correct_books` — получение списка книг по жанру при наличии таких книг  
 - `test_get_books_for_children_includes_child_friendly` — книги с «детским» жанром попадают в список для детей  
 - `test_add_book_in_favorites_adds_correctly` — добавление книги в избранное  

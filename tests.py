@@ -34,6 +34,12 @@ class TestBooksCollector:
         collector.set_book_genre('Незнайка', 'Комедии')
         assert collector.get_book_genre('Незнайка') == 'Комедии'
 
+    # Тест: Получение корректного словаря после добавления книги
+    def test_get_books_genre_returns_correct_dict(self, collector):
+        collector.add_new_book('Чиполлино')
+        result = collector.get_books_genre()
+        assert result == {'Чиполлино': ''}
+
     # Тест: Получение книг по жанру
     def test_get_books_with_specific_genre_returns_correct_books(self, collector):
         collector.add_new_book('Гарри Поттер')
